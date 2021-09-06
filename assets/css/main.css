@@ -1,0 +1,109 @@
+main {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+}
+
+.ivs-player {
+  position: relative;
+}
+
+.ivs-player video {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.ivs-player__controls {
+  background-color: #333;
+  box-sizing: border-box;
+  color: white;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  justify-content: space-between;
+  padding: 10px 5px;
+  width: 100%;
+}
+
+.ivs-player__controls button {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  min-width: 50px;
+  padding: 0;
+}
+
+.ivs-player__controls .ivs-player__volume--increase,
+.ivs-player__controls .ivs-player__volume--decrease {
+  min-width: 15px;
+}
+
+.ivs-player__progress {
+  height:5px;
+  position: relative;
+  width: 70%;
+}
+
+.ivs-player__progress progress {
+  -moz-border-radius:2px;
+  -webkit-border-radius:2px;
+  border-radius:2px;
+  border:none;
+  color:cyan;
+  display:block;
+  height:5px;
+  margin-top:5px;
+  width:100%;
+}
+
+.ivs-player__control {
+  cursor: pointer;
+}
+
+.ivs-player__control:not(:last-child) {
+  margin-right: 5px;
+}
+
+.ivs-player__progress progress[data-state="fake"] {
+  background:#e6e6e6;
+  height:65%;
+}
+
+.ivs-player__progress progress::-moz-progress-bar {
+  background: cyan;
+}
+
+.ivs-player__progress progress::-webkit-progress-value {
+  background: cyan;
+}
+
+.ivs-player__thumbnail-indicator {
+  background-color: red;
+  border-radius: 100%;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 5px;
+}
+
+.ivs-player__thumbnail {
+  display: none;
+  left: 10px;
+  position: absolute;
+  top: 10px;
+}
+
+.ivs-player__thumbnail--active {
+  display: block;
+}
+
+.ivs-player__time {
+  padding: 0 10px;
+}

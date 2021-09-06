@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IVS Take Home Test</title>
+    <link rel="stylesheet" href="/assets/css/main.css">
+</head>
+<body>
+
+    <main>
+
+        <section class="ivs-player">
+            <img class="ivs-player__thumbnail" src="https://via.placeholder.com/150" alt="">
+            <video>
+                <source src="/assets/videos/sample-mp4-file.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="ivs-player__controls">
+                <button class="ivs-player__control ivs-player__play-pause" type="button" data-state="play">Play</button>
+                <button class="ivs-player__control ivs-player__stop" type="button" data-state="stop">Stop</button>
+                <div class="ivs-player__control ivs-player__progress">
+                    <progress value="0" min="0"></progress>
+                </div>
+                <div class="ivs-player__time">
+                    <span class="current">00:00</span> / <span class="duration">00:00</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    
+<script type="module" src="/assets/js/main.js"></script>
+</body>
+</html>
