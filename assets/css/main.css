@@ -1,8 +1,8 @@
 main {
   left: 50%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 50px;
+  transform: translateX(-50%);
   width: 60%;
 }
 
@@ -88,6 +88,7 @@ main {
   border-radius: 100%;
   height: 5px;
   left: 0;
+  pointer-events: none;
   position: absolute;
   top: 5px;
   width: 5px;
